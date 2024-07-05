@@ -8,7 +8,7 @@ I want this system to work for as many use cases as possible, so if I overlooked
 ## Initial Setup
 You'll need to make sure you've chosen a name for your config file to make things easier. In your main script at the top, add the line `config:name('CONFIG_NAME')`, where `CONFIG_NAME` is a name you've chosen for your config file.
 
-IMPORTANT: if later down the line you're erroring every time data auto-syncs, or your avatar system isn't behaving as expected, you may have corrupt or broken data stored in your config. Delete your config at `.minecraft/figura/congif/CONFIG_NAME`
+IMPORTANT: if later down the line you're erroring every time data auto-syncs, or your avatar system isn't behaving as expected, you may have corrupt or broken data stored in your config. Delete your config at `.minecraft/figura/config/CONFIG_NAME`
 
 ## Creating your variables
 First, you'll need to create your variables in the database. Add a new table to `snsData`, inside of `dataTables.lua`. It needs to include its ID as a child, and the value should match the table key. You can add your variables bellow the ID with what ever keys and values you like. For example:
